@@ -26,7 +26,7 @@ async def start(client, message):
                 InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='https://t.me/@Actual_Thing')
             ],
             [
-                InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url=f"https://youtube.com/@At.o"),
+                InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url=f"https://youtube.com/shorts/B1NJ_AKHUho?feature=share"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
