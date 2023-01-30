@@ -45,10 +45,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me in Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ JOINΞ ⚡', url='https://t.me/+kAh07hUHdt9mZjFl'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/+kAh07hUHdt9mZjFl')
+            InlineKeyboardButton('🎁 Upgrade', url='https://t.me/Notificationsactr/5'),
+            InlineKeyboardButton('📣 Updates', url='https://t.me/+kAh07hUHdt9mZjFl')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
@@ -70,7 +70,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "➕ Join Updates Channel ➕", url=invite_link.invite_link
                 )
             ]
         ]
