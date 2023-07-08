@@ -387,7 +387,7 @@ async def get_shortlink(link):
     url = URL_SHORTENR_WEBSITE
     # url = "api.shareus.io"
     if url == "api.shareus.io":
-        url = f'https://{url}/easy_api'
+        url = f'https://api.shareus.io/easy_api?key=BxAXtVJ8LlgEYZFcBltF6CLxRVJ3&link=https://shareus.io'
         params = {
             "key": URL_SHORTNER_WEBSITE_API,
             "link": link,
