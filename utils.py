@@ -1,4 +1,4 @@
-timport logging
+import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from info import *
 from imdb import Cinemagoer
@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 import requests
 import aiohttp
 
-logger = logging.getLogger(name)
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 BTN_URL_REGEX = re.compile(
@@ -122,7 +122,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
         "producer":list_to_str(movie.get("producer")),
         "composer":list_to_str(movie.get("composer")) ,
         "cinematographer":list_to_str(movie.get("cinematographer")),
-    "music_team": list_to_str(movie.get("music department")),
+        "music_team": list_to_str(movie.get("music department")),
         "distributors": list_to_str(movie.get("distributors")),
         'release_date': date,
         'year': movie.get('year'),
@@ -167,7 +167,10 @@ async def search_gagala(text):
     soup = BeautifulSoup(response.text, 'html.parser')
     titles = soup.find_all( 'h3' )
     return [title.getText() for title in titles]
-    async def get_settings(group_id):
+
+
+
+async def get_settings(group_id):
     settings = temp.SETTINGS.get(group_id)
     if not settings:
         settings = await db.get_settings(group_id)
@@ -230,7 +233,7 @@ def extract_user(message: Message) -> Union[int, str]:
             required_entity = message.entities[1]
             user_id = required_entity.user.id
             user_first_name = required_entity.user.first_name
-            else:
+        else:
             user_id = message.command[1]
             # don't want to make a request -_-
             user_first_name = user_id
@@ -288,7 +291,7 @@ def split_quotes(text: str) -> List:
 
     # 1 to avoid starting quote, and counter is exclusive so avoids ending
     key = remove_escapes(text[1:counter].strip())
-    # index will be in range, or else would have been executed and returned
+    # index will be in range, or `else` would have been executed and returned
     rest = text[counter + 1:].strip()
     if not key:
         key = text[0] + text[0]
@@ -349,7 +352,8 @@ def parser(text, keyword):
         return note_data, buttons, alerts
     except:
         return note_data, buttons, None
-        def remove_escapes(text: str) -> str:
+
+def remove_escapes(text: str) -> str:
     res = ""
     is_escaped = False
     for counter in range(len(text)):
@@ -379,7 +383,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://gplinks.in/api'
+    url = f'https://GreyMattersLinks.in/api'
     params = {'api': URL_SHORTNER_WEBSITE_API,
               'url': link,
               }
