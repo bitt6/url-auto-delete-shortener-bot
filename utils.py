@@ -383,7 +383,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    # url = f'https://gplinks.in/api'
+    # url = f'https://shareus.io/api'
     url = URL_SHORTENR_WEBSITE
     # url = "api.shareus.io"
     if url == "api.shareus.io":
