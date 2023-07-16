@@ -86,6 +86,6 @@ DOWNLOAD_TEXT_URL = "https://youtu.be/Xwn2azrJqQI"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Direct  Files"
-CAPTION_BUTTON_URL = "https://youtube.com/@actualthingyt"
+CAPTION_BUTTON_URL = "https://youtube.com/"
 
    # Auto Delete For Bot Sending Files #
