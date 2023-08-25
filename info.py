@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '13157462'))
 API_HASH = environ.get('API_HASH', 'edd40d9c75177de1e3ff6b2a4ad0fc3b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5934250224:AAGzcCtHQWc7rw6XiHrgm9fUQM6UhTxNJdM")
+BOT_TOKEN = environ.get('BOT_TOKEN', "5958194257:AAFex485ssOwPP0Br5i850IuGZ-cymOymxE")
 
 #Port
 PORT = environ.get("PORT", "8080")
