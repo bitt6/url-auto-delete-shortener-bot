@@ -82,7 +82,7 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
     # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥HOW TO DOWLOA📥"
+DOWNLOAD_TEXT_NAME = "📥HOW TO DOWLOA 📥"
 DOWNLOAD_TEXT_URL = "https://t.me/Notificationsactr/9"
 
    # Custom Caption Under Button #
