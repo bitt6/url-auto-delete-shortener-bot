@@ -1,1 +1,1 @@
-web: python3 bot.py
+web: bundle exec puma -p $PORT -C ./config/puma.rb
