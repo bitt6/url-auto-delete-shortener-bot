@@ -78,7 +78,7 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
     # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
+DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD📥"
 DOWNLOAD_TEXT_URL = "https://omegalinks.in/ref/GreyMatter6458"
 
    # Custom Caption Under Button #
