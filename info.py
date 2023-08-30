@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '13157462'))
 API_HASH = environ.get('API_HASH', 'edd40d9c75177de1e3ff6b2a4ad0fc3b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5958194257:AAFex485ssOwPP0Br5i850IuGZ-cymOymxE")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6665115796:AAHOwze4McNjyLuqaykrcOyp4aNCKfNdqVw")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -68,8 +68,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'Shrinkme.io')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'a3ff907fe8194beee019b0b12cddd84553767e0d')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gplinks.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '2debca3a80f260b5cb5bb2d8d61c03425d9731a6')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
